@@ -49,7 +49,7 @@ def selective_tweet_shortener(tweet)
     tweet_characters = tweet.split("")
     if tweet_characters.size > 140
       puts word_substituter(tweet)
-      word_substituter
+      word_substituter(tweet)
     elsif tweet_characters.size < 130
       puts tweet
       tweet
