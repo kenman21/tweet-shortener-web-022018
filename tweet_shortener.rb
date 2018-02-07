@@ -50,7 +50,7 @@ def selective_tweet_shortener(tweet)
     if tweet_characters.size > 140
       puts word_substituter(tweet)
       word_substituter(tweet)
-    elsif tweet_characters.size < 130
+    elsif tweet_characters.size < 140
       puts tweet
       tweet
     end 
