@@ -45,13 +45,11 @@ def bulk_tweet_shortener(array)
   end 
 end 
 
-def selective_tweet_shortener(array)
-  array.each do |tweet|
+def selective_tweet_shortener(tweet)|
     tweet_characters = tweet.split.map{|words| words.split("")}
     if tweet_characters.size > 140
       puts word_substituter(tweet)
     elsif tweet_characters.size < 130
       puts tweet
     end 
-  end 
 end 
